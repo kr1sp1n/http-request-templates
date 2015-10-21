@@ -1,0 +1,15 @@
+{
+  "uri": "https://api.github.com/user/repos",
+  "method": "POST",
+  "headers": {
+    "Accept": "application/vnd.github.v3+json",
+    "Authorization": "{{github.oauth_token}}",
+    "User-Agent": "Awesome-Octocat-App"
+  },
+  "body": {
+    "name": "{{github.repo_name}}",
+    "description": "{{github.repo_description}}",
+    "homepage": "{{github.repo_homepage}}",
+    "private": {{github.repo_private}}
+  }
+}
