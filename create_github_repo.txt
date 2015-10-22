@@ -9,7 +9,6 @@
   "body": {
     "name": "{{github.repo_name}}"
     ,"description": "{{github.repo_description}}"
-    ,"homepage": "{{github.repo_homepage}}"
     {{#github.repo_private}}
     ,"private": {{github.repo_private}}
     {{/github.repo_private}}
