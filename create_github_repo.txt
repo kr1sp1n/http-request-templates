@@ -3,8 +3,8 @@
   "method": "POST",
   "headers": {
     "Accept": "application/vnd.github.v3+json",
-    "Authorization": "{{github.oauth_token}}",
-    "User-Agent": "Awesome-Octocat-App"
+    "Authorization": "token {{github.oauth_token}}",
+    "User-Agent": "{{github.user_agent}}"
   },
   "body": {
     "name": "{{github.repo_name}}",
