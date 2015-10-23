@@ -1,0 +1,7 @@
+{
+  "uri": "https://app.cloud66.com/api/3/stacks",
+  "method": "GET",
+  "headers": {
+    "Authorization": Bearer {{cloud66.token}}
+  }
+}
