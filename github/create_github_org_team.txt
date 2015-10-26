@@ -10,5 +10,6 @@
     "name": "{{github.team_name}}"
     ,"description": "{{github.team_description}}"
     ,"repo_names": [{{#each github.repo_names}}{{#if @index}},{{/if}}"{{.}}"{{/each}}]
+    ,"permission": "{{github.repo_permission}}"
   }
 }
