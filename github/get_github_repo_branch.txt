@@ -1,0 +1,9 @@
+{
+  "uri": "https://api.github.com/repos/{{github.repo_owner}}/{{github.repo_name}}/branches/{{github.repo_branch}}",
+  "method": "GET",
+  "headers": {
+    "Accept": "application/vnd.github.v3+json",
+    "Authorization": "token {{github.oauth_token}}",
+    "User-Agent": "{{github.user_agent}}"
+  }
+}
