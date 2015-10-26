@@ -9,6 +9,7 @@
       "github": {
         "org": "HitFox",
         "repo_name": "{{hitfox.project_name}}",
+        "repo_description": "{{hitfox.project_description}}",
         "repo_auto_init": true,
         "repo_gitignore_template": "Rails",
         "team_name": "{{hitfox.project_name}}-devs",
