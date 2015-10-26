@@ -17,7 +17,7 @@
         "repo_gitignore_template": "Rails",
         "team_name": "{{hitfox.project_name}}-devs",
         "team_description": "Developers for {{hitfox.project_name}} project",
-        "repo_names": ["{{hitfox.project_name}}"]
+        "repo_names": ["HitFox/{{hitfox.project_name}}"]
       }
     },
     "callbacks": {
