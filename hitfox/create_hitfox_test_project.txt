@@ -1,5 +1,5 @@
 {
-  "uri": "{{pipeline_api}}/create_hitfox_project",
+  "uri": "{{& pipeline_api}}/create_hitfox_project",
   "method": "PUT",
   "headers": {
     "Content-Type": "application/json"
@@ -22,11 +22,11 @@
     },
     "callbacks": {
       "success": {
-        "uri": "{{pipeline_api}}/done",
+        "uri": "{{& pipeline_api}}/done",
         "method": "POST"
       },
       "fail": {
-        "uri": "{{pipeline_api}}/fail",
+        "uri": "{{& pipeline_api}}/fail",
         "method": "POST"
   	  }
     }
