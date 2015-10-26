@@ -1,0 +1,11 @@
+{
+  "uri": "{{pipeline_api}}/create_hitfox_project",
+  "method": "PUT",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "name": "{{hitfox.project_name}}"
+    ,"description": "{{hitfox.project_description}}"
+  }
+}
