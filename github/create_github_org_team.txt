@@ -9,8 +9,6 @@
   "body": {
     "name": "{{github.team_name}}"
     ,"description": "{{github.team_description}}"
-    {{#github.repo_names}}
-    ,"repo_names": {{github.repo_names}}
-    {{/github.repo_names}}
+    ,"repo_names": [{{#each github.repo_names}}{{#if @index}},{{/if}}"{{.}}"{{/each}}]
   }
 }
