@@ -8,6 +8,6 @@
   },
   "body": {
     "name": "{{github.repo_name}}"
-    ,"default_branch": "{{github.repo_branch_name}}"
+    ,"default_branch": "{{github.repo_default_branch}}"
   }
 }
