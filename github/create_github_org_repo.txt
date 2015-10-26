@@ -1,0 +1,34 @@
+{
+  "uri": "https://api.github.com/orgs/{{github.org}}/repos",
+  "method": "POST",
+  "headers": {
+    "Accept": "application/vnd.github.v3+json",
+    "Authorization": "token {{github.oauth_token}}",
+    "User-Agent": "{{github.user_agent}}"
+  },
+  "body": {
+    "name": "{{github.repo_name}}"
+    ,"description": "{{github.repo_description}}"
+    ,"homepage": "{{github.repo_homepage}}"
+    {{#github.repo_private}}
+    ,"private": {{github.repo_private}}
+    {{/github.repo_private}}
+    {{#github.repo_has_issues}}
+    ,"has_issues": {{github.repo_has_issues}}
+    {{/github.repo_has_issues}}
+    {{#github.repo_has_wiki}}
+    ,"has_wiki": {{github.repo_has_wiki}}
+    {{/github.repo_has_wiki}}
+    {{#github.repo_has_downloads}}
+    ,"has_downloads": {{github.repo_has_downloads}}
+    {{/github.repo_has_downloads}}
+    {{#github.repo_team_id}}
+    ,"team_id": {{github.repo_has_downloads}}
+    {{/github.repo_team_id}}
+    {{#github.repo_auto_init}}
+    ,"auto_init": {{github.repo_auto_init}}
+    {{/github.repo_auto_init}}
+    ,"gitignore_template": "{{github.repo_gitignore_template}}"
+    ,"license_template": "{{github.repo_license_template}}"
+  }
+}
