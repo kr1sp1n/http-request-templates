@@ -7,9 +7,12 @@
   "body": {
     "data": {
       "github": {
+        "oauth_token": "{{github.oauth_token}}",
+        "user_agent": "pipelines",
         "org": "HitFox",
         "repo_name": "{{hitfox.project_name}}",
         "repo_description": "{{hitfox.project_description}}",
+        "repo_private": true,
         "repo_auto_init": true,
         "repo_gitignore_template": "Rails",
         "team_name": "{{hitfox.project_name}}-devs",
