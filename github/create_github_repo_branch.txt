@@ -7,7 +7,7 @@
     "User-Agent": "{{github.user_agent}}"
   },
   "body": {
-    "ref": "refs/heads/{{github.repo_branch_name}}",
-    "sha": "{{github.repo_branch_sha}}"
+    "ref": "refs/heads/{{github.repo_branch}}",
+    "sha": "{{sha}}"
   }
 }
