@@ -1,0 +1,4 @@
+{
+  "uri": "{{delay_service}}/?delay={{delay}}",
+  "method": "GET"
+}
