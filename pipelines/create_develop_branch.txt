@@ -1,0 +1,26 @@
+{
+  "uri": "{{& pipeline_api}}/create_github_develop_branch",
+  "method": "PUT",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "data": {
+      "github": {
+        "oauth_token": "{{github.oauth_token}}",
+        "repo_owner": "{{github.repo_owner}}",
+        "repo_name": "{{github.repo_name}}"
+      }
+    },
+    "callbacks": {
+      "success": {
+        "uri": "{{& pipeline_api}}/done",
+        "method": "POST"
+      },
+      "fail": {
+        "uri": "{{& pipeline_api}}/fail",
+        "method": "POST"
+      }
+    }
+  }
+}
