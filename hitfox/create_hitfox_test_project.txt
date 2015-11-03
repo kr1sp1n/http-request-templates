@@ -6,6 +6,7 @@
   },
   "body": {
     "data": {
+      "pipeline_api": "{{& pipeline_api}}",
       "github": {
         "oauth_token": "{{github.oauth_token}}",
         "user_agent": "pipelines",
