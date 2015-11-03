@@ -9,7 +9,8 @@
       "github": {
         "oauth_token": "{{github.oauth_token}}",
         "repo_owner": "{{github.repo_owner}}",
-        "repo_name": "{{github.repo_name}}"
+        "repo_name": "{{github.repo_name}}",
+        "user_agent": "{{github.user_agent}}"
       }
     },
     "callbacks": {
