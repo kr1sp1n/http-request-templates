@@ -1,0 +1,10 @@
+{
+  "uri": "https://app.cloud66.com/users",
+  "method": "POST",
+  "body": {
+    "user": {
+      "email": "{{cloud66.email}}",
+      "password": "{{cloud66.password}}"
+    }
+  }
+}
