@@ -1,0 +1,14 @@
+{
+  "uri": "http://api.pusherapp.com/apps/{{pusher.app_id}}/events",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "name": "{{pusher.event.name}}",
+    "data": {{pusher.event.data}},
+    "channels": [{{#each pusher.event.channels}}{{#if @index}},{{/if}}"{{.}}"{{/each}}],
+    "channel": "{{pusher.event.channel}}",
+    "socket_id": "{{pusher.event.socket_id}}"
+  }
+}
