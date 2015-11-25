@@ -1,0 +1,9 @@
+{
+  "uri": "https://api.github.com/orgs/{{github.org}}/teams",
+  "method": "GET",
+  "headers": {
+    "Accept": "application/vnd.github.v3+json",
+    "Authorization": "token {{github.oauth_token}}",
+    "User-Agent": "{{github.user_agent}}"
+  }
+}
