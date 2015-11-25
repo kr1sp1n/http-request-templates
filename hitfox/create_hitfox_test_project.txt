@@ -1,5 +1,5 @@
 {
-  "uri": "{{& pipeline_api}}/create_hitfox_project",
+  "uri": "{{& pipeline_api}}/-K2mDjxt2at24A6OcldE",
   "method": "PUT",
   "headers": {
     "Content-Type": "application/json"
