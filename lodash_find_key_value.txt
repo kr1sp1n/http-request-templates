@@ -1,0 +1,8 @@
+{
+  "uri": "{{& lodash.endpoint}}/find",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": [{{ json lodash.collection }}, "{{ lodash.key }}", "{{ lodash.value }}" ]
+}
