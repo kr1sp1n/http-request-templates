@@ -6,6 +6,11 @@
   },
   "body": {
     "data": {
+      "github": {
+        "org": "{{ github.org }}",
+        "oauth_token": "{{ github.oauth_token }}",
+        "user_agent": "{{github.user_agent}}"
+      },
       "lodash": {
         "key": "name",
         "value": "{{ github.team_name}}"
