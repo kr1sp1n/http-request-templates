@@ -4,5 +4,5 @@
   "headers": {
     "Content-Type": "application/json"
   },
-  "body": {{ json lodash.args}}
+  "body": {{ json lodash.args }}
 }
