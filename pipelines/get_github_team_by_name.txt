@@ -1,0 +1,25 @@
+{
+  "uri": "{{& pipeline_api}}/-K44IWlC56_BRKLs6anl",
+  "method": "PUT",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "data": {
+      "lodash": {
+        "key": "name",
+        "value": "{{ github.team_name}}"
+      }
+    },
+    "callbacks": {
+      "success": {
+        "uri": "{{& pipeline_api}}/done",
+        "method": "POST"
+      },
+      "fail": {
+        "uri": "{{& pipeline_api}}/fail",
+        "method": "POST"
+      }
+    }
+  }
+}
