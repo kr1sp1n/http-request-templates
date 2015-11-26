@@ -1,0 +1,8 @@
+{
+  "uri": "{{& lodash.endpoint}}/{{lodash.function}}",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {{lodash.args}}
+}
