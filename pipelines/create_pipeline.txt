@@ -1,0 +1,14 @@
+{
+  "uri": "{{& pipeline_service.endpoint}}/",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "name": "{{ pipeline.name }}",
+    "description": "{{ pipeline.description }}",
+    "globals": {{ json pipeline.globals }},
+    "steps": {{ json pipeline.steps }},
+    "callbacks": {{ json pipeline.callbacks }}
+  }
+}
