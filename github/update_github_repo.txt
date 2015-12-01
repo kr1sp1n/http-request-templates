@@ -7,7 +7,14 @@
     "User-Agent": "{{github.user_agent}}"
   },
   "body": {
-    "name": "{{github.repo_name}}"
-    ,"default_branch": "{{github.repo_default_branch}}"
+    {{#if github.new_repo_name}}
+      "name": "{{github.new_repo_name}}"
+      {{#if github.default_repo_branch }}
+      ,
+      {{/if}}
+    {{/if}}
+    {{#if github.default_repo_branch}}
+      "default_branch": "{{github.repo_default_branch}}"
+    {{/if}}
   }
 }
